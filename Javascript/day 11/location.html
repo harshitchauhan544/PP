@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #search-bar{
+            height:200px;
+            width : 100%;
+            background-color: rgb(196, 148, 148);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #search-bar input{
+            height: 25px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id = "search-bar">
+            <input type="text" onkeyup="handleSearch(event)">
+            <div id="locations">
+            
+            </div>
+        </div>
+    </nav>
+
+    <script src="./location.js"></script>
+</body>
+</html>
