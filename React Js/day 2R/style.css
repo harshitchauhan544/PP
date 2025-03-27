@@ -1,0 +1,10 @@
+.card{
+    margin : 1rem auto;
+    max-width : 500px;
+    background-color: gray;
+    padding: 1rem;;
+}
+
+.submit{
+    background-color: red;
+}

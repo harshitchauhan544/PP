@@ -11,27 +11,19 @@
 
 import ReactDOM from "react-dom/client";
 import React from "react";
+import Card from "./components/card";
+import { Button } from "./components/Button";
+// Button is imported with curly braces 
+// as it is not passed as default 
 
 const domRoot = document.getElementById('parent');
 const reactRoot = ReactDOM.createRoot(domRoot);
 
-// start with uppercase letter for naming - React Components
-
-const Card = ({username}) => {
-    // console.log(abc)
-    // const { username} = abc;
-    // console.log(username)
-    return (
-        <div>
-            <h3>Hello {username}!</h3>
-            <p>Be fast </p>
-        </div>
-    );
-};
 
 const App = () => {
     return (
         <div>
+            <Button color ="submit">click</Button>
             <Card username="Harshit"></Card>
             <Card username="Raj"></Card>
             <Card username="Mj"></Card>
