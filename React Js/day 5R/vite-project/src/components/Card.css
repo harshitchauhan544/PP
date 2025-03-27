@@ -1,0 +1,11 @@
+.card{
+    max-width: 400px;
+    max-height: 400px;
+    border: 1px solid rgb(25, 25, 22);
+    padding: 1rem;
+    margin: 1rem auto;
+}
+.photo{
+    max-width: 200px;
+    max-height: 150px;
+}
