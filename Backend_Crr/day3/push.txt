@@ -1,0 +1,2 @@
+undefined
+{"name":"soap","price":25,"stock":10}
