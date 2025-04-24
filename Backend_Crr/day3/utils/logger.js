@@ -4,6 +4,8 @@ const saveLog = (str) => {
     fsPromises.appendFile('logs.txt', str);
 }
 
+fsPromises.readF
+
 const requestLog = async(obj)=> {
 
     const {method,url} = requestLog;
