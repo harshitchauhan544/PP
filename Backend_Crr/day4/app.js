@@ -14,6 +14,8 @@ const app = express();
 //     console.log("----Hello----");
 // });
 
+// collects the data chunks together , otherwise we get an error
+app.use(express.json());
 app.use(morgan('dev'))
 
 app.use('/api/v1/products',productRouter)
