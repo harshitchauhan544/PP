@@ -25,6 +25,12 @@ const getProductsController = async (req,res) => {
 
     const productsList = await mongoosequery;
 
+    await new Promise( (resolve,reject)=> {
+        setTimeout(()=>{
+            resolve();
+        },5000);
+    })
+
     const queryClone = mongoosequery.clone();
     const totalProducts = await ProductModel.countDocuments();
 
