@@ -3,6 +3,7 @@ require("./src/config/db.js");
 
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors');
 const {productRouter} = require('./src/api/v1/products/routes/product-routes.js');
 
 
@@ -15,6 +16,7 @@ const app = express();
 // });
 
 // collects the data chunks together , otherwise we get an error
+app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'))
 
